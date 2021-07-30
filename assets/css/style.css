@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif; 
+   
+}
+
+/* POUR TOUTES LES CLASS CONTAINER */
+
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+h1{
+    margin: 10px 0;
+}
+
+p{
+    line-height: 22px;
+    margin-bottom: 20px;
+    opacity: .6;
+}
+
+.container a{
+    text-decoration: none;
+    padding: 6px 120px;
+    background: #F50057;
+    color: #fff;
+}
+
+
+.form-container div{
+    margin-bottom: 15px;
+}
+
+.form-container input{
+    height: 30px;
+    width: 270px;
+    outline: none;
+    padding: 10px;
+}
+
+.form-container button{
+    height: 30px;
+    width: 280px;
+    background: #F50057;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    z-index: 1000;
+}
+
+img{
+    height: 150px;
+}
+
+
+
+
+/* POP UP */
+
+.pop-up-container{
+    z-index: 2000;
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pop-up-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.pop-up{
+    width: 250px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-size: 0.9em;
+    
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+
+/* NOTIFICATION  */
+
+
+.notification-container{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.1); 
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.notification-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.notification{
+    width: 250px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+
+#btn-quitter,
+#btn-fermer{
+    border: none;
+    padding: 6px 12px;
+    background-color: #F50057;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+
+#btn-fermer-notif{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #F50057;
+    color: #fff;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
